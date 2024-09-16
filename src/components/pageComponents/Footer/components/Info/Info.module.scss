@@ -1,0 +1,22 @@
+.info {
+  @apply flex flex-col gap-2-xs;
+}
+
+.legal {
+  @apply text-[0.75rem] font-normal text-[#11111180];
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.button {
+  @apply max-w-[160px];
+}
+
+.link {
+  @apply text-[0.875rem] text-accent underline;
+
+  &:hover,
+  &:focus {
+    @apply no-underline;
+  }
+}

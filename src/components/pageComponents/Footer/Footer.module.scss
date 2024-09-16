@@ -1,0 +1,39 @@
+.footer {
+  @apply py-[70px];
+}
+
+.container {
+  @apply grid grid-cols-2 gap-3-xs sm:grid-cols-3 sm:gap-y-4-xs sm:gap-x-2-xs lg:grid-cols-4 lg:gap-3-xs;
+
+  grid-template-areas:
+    "info ."
+    "menu menu"
+    "schedule ."
+    "contacts .";
+
+  @media screen and (min-width: 640px) {
+    grid-template-areas:
+      "info menu schedule"
+      "contacts menu .";
+  }
+
+  @media screen and (min-width: 1024px) {
+    grid-template-areas: "info menu schedule contacts";
+  }
+}
+
+.info {
+  grid-area: info;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.schedule {
+  grid-area: schedule;
+}
+
+.contacts {
+  grid-area: contacts;
+}
