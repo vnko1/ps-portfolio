@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ContentContainer } from "@/components";
-import { Info, Menu, Schedule } from "./components";
+import { Info, Menu, Schedule, Contacts } from "./components";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
       <Info className={styles.info} />
       <Menu className={styles.menu} />
       <Schedule className={styles.schedule} />
-      <div className={styles.contacts}>Contacts</div>
+      <Contacts className={styles.contacts} />
     </ContentContainer>
   );
 };

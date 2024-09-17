@@ -1,3 +1,15 @@
 .schedule {
   @apply flex flex-col gap-[1.55rem];
 }
+
+.text {
+  @apply flex flex-col gap-[15px];
+}
+
+.icons {
+  @apply flex gap-1-xs;
+}
+
+.link {
+  @apply flex justify-center items-center w-2-lg h-2-lg rounded-[50%] bg-accent text-light;
+}

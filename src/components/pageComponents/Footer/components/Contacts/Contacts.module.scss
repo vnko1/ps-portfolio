@@ -1,0 +1,19 @@
+.contacts {
+  @apply flex flex-col gap-[1.55rem];
+}
+
+.links {
+  @apply flex flex-col gap-1-xs;
+}
+
+.link {
+  @apply flex items-center gap-1-xs;
+
+  & svg {
+    @apply inline-block w-[24px] h-[24px] flex-grow;
+  }
+
+  & span {
+    // @apply;
+  }
+}
