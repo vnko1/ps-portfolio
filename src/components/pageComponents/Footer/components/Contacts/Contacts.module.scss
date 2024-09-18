@@ -10,10 +10,25 @@
   @apply flex items-center gap-1-xs;
 
   & svg {
-    @apply inline-block w-[24px] h-[24px] flex-grow;
+    @apply max-sm:hidden inline-block  text-accent;
   }
 
   & span {
-    // @apply;
+    @apply transition-all duration-300;
   }
+
+  &:hover,
+  &:focus {
+    & span {
+      @apply text-accent underline;
+    }
+  }
+}
+
+.icons {
+  @apply flex gap-1-xs;
+}
+
+.iconLink {
+  @apply flex justify-center items-center w-2-lg h-2-lg rounded-[50%] bg-accent text-light;
 }

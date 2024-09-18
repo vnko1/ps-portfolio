@@ -2,6 +2,7 @@ import React from "react";
 import clsx from "clsx";
 import { FaViber, FaTelegram, FaSkype } from "react-icons/fa";
 
+import { socContacts } from "@/utils/constants";
 import styles from "./Schedule.module.scss";
 
 interface ScheduleProps {
@@ -9,9 +10,9 @@ interface ScheduleProps {
 }
 
 const contacts = [
-  { icon: FaViber, href: "/" },
-  { icon: FaTelegram, href: "/" },
-  { icon: FaSkype, href: "/" },
+  { icon: FaViber, href: socContacts.viber },
+  { icon: FaTelegram, href: socContacts.telegram },
+  { icon: FaSkype, href: socContacts.skype },
 ];
 
 const Schedule: React.FC<ScheduleProps> = ({ className }) => {
