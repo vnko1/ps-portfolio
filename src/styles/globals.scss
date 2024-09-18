@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply outline-none;
+}
+
 body {
   @apply w-screen overflow-x-hidden bg-light font-sans text-dark;
 }
