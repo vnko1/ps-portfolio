@@ -1,0 +1,11 @@
+.header {
+  @apply fixed top-0 left-0 py-2-xs md:py-4-xs;
+}
+
+.container {
+  @apply flex items-center justify-between;
+}
+
+.menuBtn {
+  @apply lg:hidden;
+}

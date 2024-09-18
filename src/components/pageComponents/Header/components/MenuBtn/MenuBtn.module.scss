@@ -1,0 +1,8 @@
+.button {
+  @apply flex justify-center items-center transition-all duration-300;
+
+  &:hover,
+  &:focus {
+    @apply text-accent;
+  }
+}
