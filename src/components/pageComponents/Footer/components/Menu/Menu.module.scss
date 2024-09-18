@@ -1,0 +1,7 @@
+.menu {
+  @apply flex flex-col gap-[1.55rem];
+}
+
+.nav {
+  @apply flex flex-wrap justify-start gap-2-xs sm:flex-col sm:gap-[15px];
+}
