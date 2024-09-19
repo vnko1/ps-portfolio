@@ -1,0 +1,18 @@
+.menu {
+  @apply w-full h-full bg-gradient-to-r from-[#6698f8] to-[#3c5fa0];
+}
+
+.menuHeader {
+  @apply p-2-xs flex justify-between items-center;
+}
+
+.cross {
+  @apply text-[rgba(255,255,255,0.4)];
+}
+
+.content {
+  @apply p-[50px] flex flex-col gap-2-xs;
+}
+
+.list {
+}
