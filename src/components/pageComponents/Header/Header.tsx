@@ -1,11 +1,14 @@
+"use client";
 import React from "react";
 import clsx from "clsx";
 
-import { ContentContainer, Logo, Modal } from "@/components";
-import { MenuBtn } from "./components";
+import { ContentContainer, Logo } from "@/components";
+import { Menu, MenuBtn } from "./components";
 import styles from "./Header.module.scss";
+import { useModal } from "@/hooks";
 
 const Header: React.FC = () => {
+  const { setActive, ...rest } = useModal();
   return (
     <ContentContainer
       wrapperClassName={clsx(styles.header)}
@@ -13,7 +16,8 @@ const Header: React.FC = () => {
       wrapperTag="header"
     >
       <Logo />
-      <MenuBtn className={styles.menuBtn} />
+      <MenuBtn onClick={() => setActive(true)} className={styles.menuBtn} />
+      <Menu setActive={setActive} {...rest} />
     </ContentContainer>
   );
 };

@@ -1,0 +1,11 @@
+.backdrop {
+  @apply fixed top-0 left-0 flex justify-center items-center w-screen h-screen z-50 transition-all duration-300 opacity-0 scale-0;
+}
+
+.active {
+  @apply opacity-100 scale-100;
+}
+
+.hidden {
+  @apply overflow-hidden;
+}
