@@ -1,5 +1,5 @@
 .menu {
-  @apply w-full h-full bg-gradient-to-r from-[#6698f8] to-[#3c5fa0];
+  @apply w-full h-full overflow-y-auto bg-gradient-to-r from-[#6698f8] to-[#3c5fa0];
 }
 
 .menuHeader {
@@ -11,8 +11,21 @@
 }
 
 .content {
-  @apply p-[50px] flex flex-col gap-2-xs;
+  @apply p-[50px] flex flex-col gap-[50px];
 }
 
-.list {
+.links {
+  @apply flex flex-col gap-2-xs;
+}
+
+.link {
+  @apply text-light;
+
+  &:hover,
+  &:focus {
+    @apply text-light;
+  }
+}
+.button.btn {
+  @apply max-w-[160px] border-light text-light;
 }

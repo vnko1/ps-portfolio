@@ -7,14 +7,14 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      dark: "#111111",
-      light: "#ffffff",
-      accent: "#6698f8",
-    },
     extend: {
       fontFamily: {
         sans: ["var(--font-open-sans)"],
+      },
+      colors: {
+        dark: "#111111",
+        light: "#ffffff",
+        accent: "#6698f8",
       },
 
       spacing: {

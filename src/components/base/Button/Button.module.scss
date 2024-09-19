@@ -1,8 +1,8 @@
 .button {
-  @apply inline-flex  justify-center items-center w-full transition-all duration-300;
+  @apply inline-flex justify-center items-center w-full transition-all duration-300;
 
   &.outlined {
-    @apply py-1-xs px-3-xs rounded-[25px] border border-accent text-[0.875rem] font-bold text-accent bg-light;
+    @apply py-1-xs px-3-xs rounded-[25px] border border-accent text-[0.875rem] font-bold text-accent bg-transparent;
 
     &:hover,
     &:focus {
